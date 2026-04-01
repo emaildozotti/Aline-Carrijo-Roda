@@ -137,7 +137,7 @@ export default function Hero() {
               <div className="absolute inset-0 bg-primary/20 mix-blend-multiply z-10 pointer-events-none" />
 
               <img
-                src="HERO_IMAGE_URL"
+                src="/hero.jpg"
                 alt="Aline Roda: Psicanalista Clínica, Terapeuta Transpessoal e Sistêmica"
                 className="w-full h-full object-cover object-center transition-transform duration-[2s] ease-out hover:scale-105"
                 style={{ filter: 'grayscale(10%) contrast(1.05) sepia(5%)' }}

@@ -158,7 +158,7 @@ export default function About() {
                   }}
                 >
                   <img
-                    src="ABOUT_IMAGE_URL"
+                    src="/sobre.jpg"
                     alt="Aline Roda: Terapeuta"
                     className="w-full h-full object-cover object-center"
                     style={{ filter: 'grayscale(10%) contrast(1.05) sepia(5%)' }}
