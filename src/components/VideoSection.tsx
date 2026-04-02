@@ -47,37 +47,13 @@ export default function VideoSection() {
                 boxShadow: '0 25px 50px -12px rgba(0,0,0,0.15)',
               }}
             >
-              {VIDEO_ID && VIDEO_ID !== 'YOUTUBE_VIDEO_ID' ? (
-                <iframe
-                  src={`https://www.youtube.com/embed/${VIDEO_ID}`}
-                  title="Vídeo Aline Roda"
-                  className="absolute inset-0 w-full h-full"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                />
-              ) : (
-                <div
-                  className="absolute inset-0 flex items-center justify-center"
-                  style={{ backgroundColor: 'var(--color-primary)' }}
-                >
-                  <div className="text-center px-8">
-                    <div
-                      className="w-16 h-16 rounded-full border-2 flex items-center justify-center mx-auto mb-6"
-                      style={{ borderColor: 'rgba(181, 84, 106, 0.4)' }}
-                    >
-                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                        <path d="M8 5v14l11-7L8 5z" fill="var(--color-secondary)" />
-                      </svg>
-                    </div>
-                    <p
-                      className="text-xs uppercase tracking-[0.2em] font-light"
-                      style={{ color: 'var(--color-off-white)', opacity: 0.6 }}
-                    >
-                      Vídeo em breve
-                    </p>
-                  </div>
-                </div>
-              )}
+              <iframe
+                src={`https://www.youtube.com/embed/${VIDEO_ID}`}
+                title="Vídeo Aline Roda"
+                className="absolute inset-0 w-full h-full"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              />
             </div>
           </FadeIn>
 
