@@ -39,22 +39,17 @@ export default function VideoSection() {
           {/* Container de vídeo 9:16 */}
           <FadeIn delay={0.2}>
             <div
-              className="mx-auto overflow-hidden rounded-sm"
-              style={{
-                maxWidth: '300px',
-                width: '100%',
-                boxShadow: '0 25px 50px -12px rgba(0,0,0,0.15)',
-              }}
+              className="relative w-full rounded-sm overflow-hidden ring-1 ring-primary shadow-2xl"
+              style={{ maxWidth: '300px', aspectRatio: '9/16' }}
             >
-              <div style={{ position: 'relative', paddingBottom: '177.78%', height: 0 }}>
-                <iframe
-                  src={`https://www.youtube.com/embed/${VIDEO_ID}`}
-                  title="Vídeo Aline Roda"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                  style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', border: 'none' }}
-                />
-              </div>
+              <iframe
+                src={`https://www.youtube.com/embed/${VIDEO_ID}`}
+                title="Vídeo Aline Roda"
+                className="w-full h-full"
+                frameBorder={0}
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              />
             </div>
           </FadeIn>
 
