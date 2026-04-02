@@ -18,12 +18,7 @@ export default function VideoSection() {
 
           {/* Pré-vídeo */}
           <FadeIn>
-            <p
-              className="eyebrow-ultra mb-8"
-              style={{ color: 'var(--color-text)', opacity: 0.5 }}
-            >
-              Em primeira pessoa
-            </p>
+            <div className="mb-8" />
             <p
               className="text-lg md:text-xl leading-relaxed font-light mb-16"
               style={{
